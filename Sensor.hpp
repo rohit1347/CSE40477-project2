@@ -21,6 +21,7 @@ namespace RohitKumar
         Signal& getSource() const;
     private:
         string name;
+        Signal& source;
     };
 
 }

@@ -26,6 +26,5 @@ namespace RohitKumar{
     }
     string Sensor::getUnits() const
     {
-        return "V";
     }
 }
