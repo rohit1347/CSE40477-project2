@@ -12,7 +12,7 @@ namespace RohitKumar
         Time(int hours, int minutes, int seconds);
         int getTotalTimeAsSeconds() const;
         Time& operator+=(const Time &rhs);
-        static ostream &operator<<(ostream &os, const Time &rhs);
+        friend ostream &operator<<(ostream &os, const Time &rhs);//Clarify if the function is supposed to static or a friend function
 
     private:
         int seconds;
