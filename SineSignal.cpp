@@ -1,5 +1,6 @@
 #include "SineSignal.hpp"
 
-namespace RohitKumar{
-   
+namespace RohitKumar
+{
+
 }

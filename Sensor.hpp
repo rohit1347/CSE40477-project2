@@ -12,16 +12,18 @@ namespace RohitKumar
 {
     class Sensor
     {
-        public:
-        Sensor(string name, Signal& source);
-        void takeReading(Time t, DataRecorder& recorder) const;
+    public:
+        Sensor(string name, Signal &source);
+        void takeReading(Time t, DataRecorder &recorder) const;
+
     protected:
         virtual string getUnits() const;
         string getName() const;
-        Signal& getSource() const;
+        Signal &getSource() const;
+
     private:
         string name;
-        Signal& source;
+        Signal &source;
     };
 
 }

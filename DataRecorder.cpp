@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using std::ostream;
 
 #include "DataRecorder.hpp"
@@ -6,11 +6,11 @@ using std::ostream;
 
 namespace RohitKumar
 {
-    DataRecorder::DataRecorder(ostream& out) : out(out)
+    DataRecorder::DataRecorder(ostream &out) : out(out)
     {
     }
 
-    void DataRecorder::log(const Time& timestamp, const string& sensorName, double sensorVoltage, const string& sensorUnits)
+    void DataRecorder::log(const Time &timestamp, const string &sensorName, double sensorVoltage, const string &sensorUnits)
     {
         out << timestamp << " " << sensorName << " " << sensorVoltage << " " << sensorUnits << "\n";
     }
