@@ -20,7 +20,12 @@ namespace Project2
     }
     ostream &operator<<(ostream &os, const Time &rhs)
     {
-        os << rhs.getTotalTimeAsSeconds();
+        int totalSeconds = rhs.getTotalTimeAsSeconds();
+        int hours = totalSeconds / 3600;
+        int minutes = (totalSeconds % 3600) / 60;
+        int seconds = totalSeconds % 60;
+
+        os << hours << "h:" << minutes << "m:" << seconds << "s";
         return os;
     }
 }

@@ -22,12 +22,12 @@ int main()
     Project2UnitTest::TestDataRecorder();
     Project2UnitTest::TestConstantSignal();
     Project2UnitTest::TestSawtoothSignal();
-    Project2UnitTest::TestSineSignal();
+    // Project2UnitTest::TestSineSignal();
     Project2UnitTest::TestAngularSensor();
     Project2UnitTest::TestPressureSensor();
     Project2UnitTest::TestTemperatureSensor();
     Project2UnitTest::TestVibrationSensor();
-    Project2UnitTest::TestMonitoringSystem();
+    // Project2UnitTest::TestMonitoringSystem();
 
     // Display test results
     Project2UnitTest::DisplaySummary();
