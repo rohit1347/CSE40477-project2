@@ -1,8 +1,8 @@
-#include "Time.hpp"
-#include "SawtoothSignal.hpp"
+#include "Time.h"
+#include "SawtoothSignal.h"
 #include <cmath>
 
-namespace RohitKumar
+namespace Project2
 {
     SawtoothSignal::SawtoothSignal(double voltageOffset, Time timeOffset, double minVoltage, double maxVoltage, Time period)
         : PeriodicSignal(voltageOffset, timeOffset, minVoltage, maxVoltage, period)

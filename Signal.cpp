@@ -1,13 +1,9 @@
-#include "Time.hpp"
-#include "Signal.hpp"
+#include "Time.h"
+#include "Signal.h"
 
-namespace RohitKumar
+namespace Project2
 {
     Signal::Signal(double voltageOffset, Time timeOffset) : voltageOffset(voltageOffset), timeOffset(timeOffset)
-    {
-    }
-
-    double Signal::getVoltageAtTime(Time t) const
     {
     }
 

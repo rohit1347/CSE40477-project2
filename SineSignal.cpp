@@ -1,9 +1,9 @@
-#include "SineSignal.hpp"
+#include "SineSignal.h"
 #include <cmath>
 using std::sin;
 
 
-namespace RohitKumar
+namespace Project2
 {
     const double M_PI= 3.14159265358979323846;
     SineSignal::SineSignal(double voltageOffset, Time timeOffset, double minVoltage, double maxVoltage, Time period) : PeriodicSignal(voltageOffset, timeOffset, minVoltage, maxVoltage, period)

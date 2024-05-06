@@ -1,10 +1,10 @@
 #include <string>
 using std::string;
 
-#include "Sensor.hpp"
-#include "TemperatureSensor.hpp"
+#include "Sensor.h"
+#include "TemperatureSensor.h"
 
-namespace RohitKumar
+namespace Project2
 {
 TemperatureSensor::TemperatureSensor(string name, Signal &source) : Sensor(name, source)
 {
@@ -14,4 +14,4 @@ string TemperatureSensor::getUnits() const
 {
     return "Degrees Celsius";
 }
-} // namespace RohitKumar
+} // namespace Project2

@@ -1,9 +1,9 @@
 #include <iostream>
 using std::ostream;
 
-#include "Time.hpp"
+#include "Time.h"
 
-namespace RohitKumar
+namespace Project2
 {
     Time::Time(int hours, int minutes, int seconds) : seconds(hours * 3600 + minutes * 60 + seconds)
     {

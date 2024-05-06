@@ -1,10 +1,10 @@
 #include <string>
 using std::string;
 
-#include "Sensor.hpp"
-#include "VibrationSensor.hpp"
+#include "Sensor.h"
+#include "VibrationSensor.h"
 
-namespace RohitKumar
+namespace Project2
 {
 VibrationSensor::VibrationSensor(string name, Signal &source) : Sensor(name, source)
 {
@@ -14,4 +14,4 @@ string VibrationSensor::getUnits() const
 {
     return "Hertz (Hz)";
 }
-} // namespace RohitKumar
+} // namespace Project2

@@ -1,12 +1,12 @@
 #include <string>
 using std::string;
 
-#include "Time.hpp"
-#include "Signal.hpp"
-#include "DataRecorder.hpp"
-#include "Sensor.hpp"
+#include "Time.h"
+#include "Signal.h"
+#include "DataRecorder.h"
+#include "Sensor.h"
 
-namespace RohitKumar
+namespace Project2
 {
     //
     Sensor::Sensor(string name, Signal &source) : name(name), source(source)
@@ -24,8 +24,5 @@ namespace RohitKumar
     Signal &Sensor::getSource() const
     {
         return source;
-    }
-    string Sensor::getUnits() const
-    {
     }
 }

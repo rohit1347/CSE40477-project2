@@ -1,10 +1,10 @@
 #include <iostream>
 using std::ostream;
 
-#include "DataRecorder.hpp"
-#include "Time.hpp"
+#include "DataRecorder.h"
+#include "Time.h"
 
-namespace RohitKumar
+namespace Project2
 {
     DataRecorder::DataRecorder(ostream &out) : out(out)
     {

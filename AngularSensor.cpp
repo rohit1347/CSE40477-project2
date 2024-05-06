@@ -1,10 +1,10 @@
 #include <string>
 using std::string;
 
-#include "Sensor.hpp"
-#include "AngularSensor.hpp"
+#include "Sensor.h"
+#include "AngularSensor.h"
 
-namespace RohitKumar
+namespace Project2
 {
 AngularSensor::AngularSensor(string name, Signal &source) : Sensor(name, source)
 {
@@ -14,4 +14,4 @@ string AngularSensor::getUnits() const
 {
     return "Radians";
 }
-} // namespace RohitKumar
+} // namespace Project2

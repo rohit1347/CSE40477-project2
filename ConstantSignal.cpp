@@ -1,7 +1,7 @@
-#include "Time.hpp"
-#include "ConstantSignal.hpp"
+#include "Time.h"
+#include "ConstantSignal.h"
 
-namespace RohitKumar
+namespace Project2
 {
     ConstantSignal::ConstantSignal(double voltageOffset, Time timeOffset) 
         : Signal(voltageOffset, timeOffset)
