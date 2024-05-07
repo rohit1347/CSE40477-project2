@@ -12,8 +12,14 @@ namespace Project2
 
     double SineSignal::getVoltageAtTime(Time t) const
     {
-        double voltage = getVoltageOffset() + getMinVoltage()+(getMaxVoltage()-getMinVoltage())/2+sin((t.getTotalTimeAsSeconds()+getTimeOffset().getTotalTimeAsSeconds())*M_PI/getPeriod().getTotalTimeAsSeconds()*(getMaxVoltage()-getMinVoltage()));
+        // Calculate the time in seconds since the start of the signal
+        double timeInSeconds = t.getTotalTimeAsSeconds() + getTimeOffset().getTotalTimeAsSeconds();
+        // Calculate the sine wave component
+        double sineWave = sin((timeInSeconds * 2 * M_PI) / getPeriod().getTotalTimeAsSeconds());
+        // Calculate the voltage at time t
+        double voltage = getVoltageOffset() + getMinVoltage() + 
+                         ((getMaxVoltage() - getMinVoltage()) / 2) * (1 + sineWave);
+
         return voltage;
     }
-
 }
