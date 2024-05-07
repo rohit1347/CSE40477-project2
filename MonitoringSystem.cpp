@@ -8,15 +8,19 @@ namespace Project2
     MonitoringSystem::MonitoringSystem(ostream &out)
         : recorder(out)
     {
+          for (int i = 0; i < 10; i++)
+    {
+        sensors[i] = nullptr;
     }
-
-    void MonitoringSystem::addSensor(Sensor *s)  // Change Sensor &s to Sensor *s
+    }
+  
+    void MonitoringSystem::addSensor(Sensor *s)
     {
         for (int i = 0; i < 10; i++)
         {
             if (sensors[i] == nullptr)
             {
-                sensors[i] = s;  // No need to take the address of s anymore
+                sensors[i] = s;
                 break;
             }
         }
